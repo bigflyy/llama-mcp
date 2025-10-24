@@ -1,0 +1,2 @@
+[console_scripts]
+weather_fetcher = weather_fetcher.weather:main

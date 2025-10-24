@@ -95,8 +95,7 @@ async def get_forecast(latitude: float, longitude: float) -> str:
 def main():
     # Initialize and run the server
     logging.info("Starting weather MCP-server")
-    mcp.run(transport='stdio')
-    logging.info("Finishing...")
+    mcp.run()
 
 
 if __name__ == "__main__":

@@ -1,10 +1,16 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "weather"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.13"
+description = "FastMCP server for weather fetching"
+authors = [{ name="ns", email="ns@gmail.com" }]
 dependencies = [
-    "httpx>=0.28.1",
-    "mcp[cli]>=1.18.0",
+  "fastmcp",
+  "requests",
+  "httpx",
 ]
+[project.scripts]
+url-text-fetcher = "weather_fetcher.weather:main"
